@@ -81,6 +81,46 @@ LEDs → Output Display.
 
 ---
 
+
+
+---
+
+## 🔄 Design Flow
+
+1. Press RESET → Registers initialized  
+2. Set input value using switches  
+3. Press STORE → Rising-edge generates valid pulse  
+4. First input initializes min & max  
+5. Each new input updates:
+   - `min_val` if smaller  
+   - `max_val` if larger  
+6. After `N` inputs:
+   - DONE = 1  
+   - Processing stops  
+   - Results remain stable  
+
+---
+
+## 🧪 Example Test Case
+
+**Inputs (Decimal):**
+
+| Value | Role |
+|--------|------|
+| 16     | —    |
+| 1      | MIN  |
+| 40     | —    |
+| 42     | MAX  |
+| 6      | —    |
+
+**Final Output:**
+
+MIN = 1
+MAX = 42
+DONE = 1
+
+---
+
 ## 📸 Demonstration
 
 ### 🔹 FPGA – Input Entry Phase
