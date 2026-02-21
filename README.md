@@ -57,12 +57,14 @@ This project demonstrates:
 
 ## 🏗 System Architecture
 
-Switches → data_in
-Button → Edge Detector → valid (1-cycle pulse)
-Clock → Sequential Registers
-Comparator Logic → min_val / max_val
-Counter → Input Tracking
-DONE Flag → Completion Indicator
-LEDs → Output Display
+Switches → data_in.
+Button → Edge Detector → valid (1-cycle pulse).
+Clock → Sequential Registers.
+Comparator Logic → min_val / max_val.
+Counter → Input Tracking.
+DONE Flag → Completion Indicator.
+LEDs → Output Display.
+
+---
 
 
