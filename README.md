@@ -65,6 +65,49 @@ Counter → Input Tracking.
 DONE Flag → Completion Indicator.
 LEDs → Output Display.
 
+
 ---
+
+## ⚙️ Hardware Specifications
+
+| Component | Description |
+|------------|------------|
+| FPGA Board | Nexys 4 DDR |
+| FPGA Chip | Xilinx Artix-7 |
+| Clock | 100 MHz onboard oscillator |
+| Inputs | 8-bit switches |
+| Output | 16 LEDs (min + max) |
+| Completion | DONE LED |
+
+---
+
+## 📸 Demonstration
+
+### 🔹 FPGA – Input Entry Phase
+System capturing input values using switches and store button.
+
+![FPGA Input Phase](images/fpga_input_phase.jpg)
+
+---
+
+### 🔹 FPGA – Final Output (DONE Asserted)
+After N inputs are entered, DONE signal is asserted and final MIN and MAX values are displayed.
+
+![FPGA Final Output](images/fpga_done_output.jpg)
+
+---
+
+### 🔹 Simulation Waveform
+Waveform confirming that `min_val` and `max_val` update only on valid pulse.
+
+![Simulation Waveform](images/simulation_waveform.png)
+
+---
+
+### 🔹 Vivado Resource Utilization Report
+Hardware resource usage summary from Vivado.
+
+![Vivado Utilization](images/vivado_utilization.png)
+
 
 
