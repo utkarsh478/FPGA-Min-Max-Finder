@@ -123,17 +123,10 @@ DONE = 1
 
 ## 📸 Demonstration
 
-### 🔹 FPGA – Input Entry Phase
-System capturing input values using switches and store button.
-
-![FPGA Input Phase](images/fpga_input_phase.jpg)
-
----
-
 ### 🔹 FPGA – Final Output (DONE Asserted)
 After N inputs are entered, DONE signal is asserted and final MIN and MAX values are displayed.
 
-![FPGA Final Output](images/fpga_done_output.jpg)
+![FPGA Final Output](images\fpga_done_output)
 
 ---
 
