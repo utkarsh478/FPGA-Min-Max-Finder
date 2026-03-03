@@ -126,7 +126,7 @@ DONE = 1
 ### 🔹 FPGA – Final Output (DONE Asserted)
 After N inputs are entered, DONE signal is asserted and final MIN and MAX values are displayed.
 
-![FPGA Final Output](images\fpga_done_output)
+![FPGA Final Output](images\fpga_done_output.png)
 
 ---
 
